@@ -1,4 +1,4 @@
-from functools import singledispatch,singledispatchmethod,partial
+from functools import singledispatch,singledispatchmethod,partial,partialmethod
 
 @singledispatch
 def func(args):
@@ -31,3 +31,10 @@ def mult(x,y):
     return x * y
 
 dobro = partial(mult,y=2)
+
+class Num:
+    
+    def mul(self,x,y):
+        return x * y
+    
+    dobro=partialmethod(mul,y=2)
