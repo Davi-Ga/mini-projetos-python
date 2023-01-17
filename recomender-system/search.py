@@ -2,12 +2,12 @@ from .data import users_feedback
 import math
 
 def euclidian_distance(dataset,user1,user2):
-    similaraty = {}
+    similarity = {}
     for item in dataset[user1]:
         if item in dataset[user2]:
-            similaraty[item] = 1
+            similarity[item] = 1
             
-    if len(similaraty) == 0:
+    if len(similarity) == 0:
         return 0
 
     sum_euclidian_distance = sum([math.pow(dataset[user1][item]-dataset[user2][item],2) 
