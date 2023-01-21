@@ -1,4 +1,5 @@
 class Pessoa:
+    #Método inicializador
     def __init__(self):
         self.pessoas=['Ana', 'Maria', 'João']
         
