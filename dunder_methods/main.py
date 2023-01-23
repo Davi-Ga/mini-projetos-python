@@ -2,7 +2,8 @@ class Pessoa:
     #Método inicializador
     def __init__(self):
         self.pessoas=['Ana', 'Maria', 'João']
-        
+    
+    #Método que retorna um objeto em forma de string
     def __str__(self):
         return f'Pessoa(pessoas={self.pessoas})'
     
