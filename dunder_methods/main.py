@@ -7,6 +7,7 @@ class Pessoa:
     def __str__(self):
         return f'Pessoa(pessoas={self.pessoas})'
     
+    #Método que retorna um objeto de uma lista de objetos
     def __getitem__(self, index):
         return self.pessoas[index]
     
